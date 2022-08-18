@@ -68,7 +68,7 @@ body{
 }
 
 .container{
-    max-width: 65%;
+    max-width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -213,4 +213,22 @@ body{
 
 .hobbies-inner-con p{
     padding-right: 10px;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    background-color: #0bb5f4;
+    border: 1px solid #0bb5f4;
+    color: #fff;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-container{
+    width: 80%;
+    margin: 40px auto;
 }

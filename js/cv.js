@@ -13,9 +13,9 @@ const user_email = document.querySelector('.email');
 const user_address = document.querySelector('.address');
 const bio = document.querySelector('.bio');
 const skills = document.querySelector('.skill-container');
-const education = document.querySelector('.education-container');
-const experience = document.querySelector('.experience');
-const hobbies = document.querySelector('.hobbies-container');
+const education = document.querySelector('.education-inner-con');
+const experience = document.querySelector('.experience-inner-con');
+const hobbies = document.querySelector('.hobbies-inner-con');
 
 
 // display values on view
@@ -34,17 +34,59 @@ get_skills['skills'].forEach(element => {
     skills.append(inner);
 });
 
+
 //Get Education
-for(let i in get_education['courses']){
+for(let i in get_education['colleges']) {
+    let institution = document.createElement('ul');
+    institution.innerHTML += `<li>
+                                    <div class="date mt-2 mb-2">${get_education['enddates'][i]} - ${get_education['stardates'][i]}</div> 
+                                    <div class="info">
+                                        <p class="college">${get_education['courses'][i]}</p>
+                                        <p class="course">${get_education['colleges'][i]}</p>
+                                    </div>
+                                </li>
+                                `
+    education.append(institution)
+}
 
-    console.log(i)
+//Get Occupation
+for(let i in get_experience['occupations']) {
+    let institution = document.createElement('ul');
+    institution.innerHTML += `
+                                <li>
+                                <div class="date mt-2 mb-2">${get_experience['enddates'][i]} - ${get_experience['stardates'][i]}</div> 
+                                    <div class="info">
+                                        <p class="work-occupation">${get_experience['companies'][i]}</p> 
+                                        <p class="work-occupation">${get_experience['occupations'][i]}</p> 
+                                        <p>${get_experience['description'][i]}</p>
+                                    </div>
+                                </li>
+                                `
+    experience.append(institution)
+}
 
-    // let institution = document.createElement('div');
-    // institution.setAttribute('class', 'institution mb-1');
-    // institution.innerHTML += `
-    //                         <p class="sidebar-year">${get_education['enddates'][i]} -- ${get_education['stardates'][i]}</p>
-    //                         <p class="certificate light-bold">${get_education['courses'][i]}</p>
-    //                         <p class="institute">${get_education['colleges'][i]}</p>
-    //                         `
-    // education.append(institution)
+// get user hobbies
+get_interests['interests'].forEach(element => {
+    let inner = document.createElement('p');
+    inner.textContent += `${element}`
+    hobbies.append(inner);
+});
+
+
+
+
+document.querySelector('.btn').addEventListener('click', generatePDF())
+
+function generatePDF() {
+    // Choose the element that your CV is rendered in.
+    let element = document.querySelector('.container');
+    // // Choose the element and save the PDF for our user.
+    var opt = {
+        margin: 0.5,
+        filename:     'my_cv.pdf',
+        html2canvas:  { scale: 10 }
+      };
+      
+    //   // New Promise-based usage:
+      html2pdf().set(opt).from(element).save();
 }
