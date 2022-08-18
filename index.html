@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv-Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container box-shadow">
+
+        <!-- Profile container  -->
+        <section class="pro-container active">  
+            <h1 class="text-center mb-2">Profile</h1>
+            <div class="progress-bar mb-2">
+                <div class="progress-inner" percent="5"></div>
+            </div>
+            <form class="pro-form">
+                <div class="form-container mt-4 mb-1">
+                    <div class="form-group">
+                        <label for="fname" class="mb-1">First Name:</label>
+                        <input type="text" name="fname" class="input fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lname" class="mb-1">Last Name:</label>
+                        <input type="text" name="lname" class="input lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="mb-1">Email:</label>
+                        <input type="text" name="email" class="input email">
+                    </div>
+                    <div class="form-group">
+                        <label for="occupation" class="mb-1">Occupation:</label>
+                        <input type="text" name="occupation" class="input occupation">
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="mb-1">Address:</label>
+                        <input type="text" name="location" class="input location">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="mb-1">Phone:</label>
+                        <input type="phone" name="phone" class="input phone">
+                    </div>
+                </div>
+                <label for="intro">Intro</label>
+                <textarea name="intro" class="intro" cols="30" rows="10"></textarea>
+            </form>
+            <div class="flex-btn">
+                <div></div>
+                <div>
+                    <a href="" class="btn pro-next mt-2" >Next</a>
+                </div>
+            </div>
+        </section> <!-- End Profile container  -->
+
+
+        <!-- Education container  -->
+        <section class="edu-container">  
+            <h1 class="text-center mb-2">Education</h1>
+            <div class="progress-bar mb-2">
+                <div class="progress-inner" percent="20"></div>
+            </div>
+            <form class="edu-form">
+                <div class="form-container mt-4 mb-1">
+                    <div class="form-group">
+                        <label for="college" class="mb-1">Institution:</label>
+                        <input type="text" name="college" class="input college">
+                    </div>
+                    <div class="form-group">
+                        <label for="course" class="mb-1">Course:</label>
+                        <input type="text" name="course" class="input course">
+                    </div>
+                    <div class="form-group">
+                        <label for="startDate" class="mb-1">Start Date:</label>
+                        <input type="date" name="startDate" class="input startDate">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="endDate" class="mb-1">End Date:</label>
+                        <input type="date"  name="endDate" class="input endDate">
+                    </div>
+                </div>
+            </form>
+            <div class="flex-btn">
+                <a href="" class="btn edu-add-more mt-2" >add more</a>
+
+                <div>
+                    <a href="" class="btn previous mt-2">Previous</a>
+                    <a href="" class="btn edu-next mt-2" >Next</a>
+                </div>
+            </div>
+        </section> <!-- End Education container  -->
+
+        <!-- Experience container  -->
+        <section class="exp-container">
+            <h1 class="text-center mb-2">Experience</h1>
+            <div class="progress-bar mb-2">
+                <div class="progress-inner" percent="45"></div>
+            </div>
+            <form class="exp-form">
+                <div class="form-container mt-4 mb-1">
+                    <div class="form-group">
+                        <label for="company" class="mb-1">Company:</label>
+                        <input type="text" name="company" class="input company">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="occupation" class="mb-1">Occupation:</label>
+                        <input type="text" name="occupation" class="input exp-occupation">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="startDate" class="mb-1">Start Date:</label>
+                        <input type="date" name="startDate" class="input expStartDate">
+                    </div>
+    
+                    <div class="form-group mb-1">
+                        <label for="endDate" class="mb-1">End Date:</label>
+                        <input type="date"  name="endDate" class="input expEndDate">
+                    </div>
+                </div>
+                <label for="description">Description:</label>
+                <textarea name="description" class="description" cols="30" rows="10"></textarea>
+                
+            </form>
+            <div class="flex-btn">
+                <a href="" class="btn exp-add-more mt-2" >add more</a>
+
+                <div>
+                    <a href="" class="btn previous mt-2">Previous</a>
+                    <a href="" class="btn exp-next mt-2" >Next</a>
+                </div>
+            </div>
+            
+        </section><!-- End Experience container  -->
+
+
+        <!-- Skills container  -->
+        <section class="skill-container">
+            <h1 class="text-center mb-2">Skills</h1>
+            <div class="progress-bar mb-4">
+                <div class="progress-inner" percent="70"></div>
+            </div>
+            <form class="skill-form">
+                <label for="skills">Skills: <strong>Please add comma after every skill</strong></label>
+                <textarea name="skills" class="skills" cols="30" rows="10"></textarea>
+        
+            </form>
+            <div class="flex-btn">
+                <div></div>
+                <div>
+                    <a href="" class="btn previous mt-2">Previous</a>
+                    <a href="" class="btn skill-next mt-2" >Next</a>
+                </div>
+            </div>
+            
+        </section><!-- End Skills container  -->
+
+        <!-- Hobbies container  -->
+        <section class="hooby-container">
+            <h1 class="text-center mb-2">Hobbies</h1>
+            <div class="progress-bar mb-4">
+                <div class="progress-inner" percent="100"></div>
+            </div>
+            <form class="hoob-form">
+                <label for="hoobies">Hobbies: <strong>Please add comma after every hooby</strong></label>
+                <textarea name="hoobies" class="hoobies" cols="30" rows="10"></textarea>
+        
+            </form>
+            <div class="flex-btn">
+                <div>
+                    <a href="" class="btn previous mt-2">Previous</a>
+                </div>
+                <div>
+                    <a href="" class="btn hooby-submit mt-2" >Preview</a>
+                </div>
+            </div>
+            
+        </section><!-- End Hobbies container  -->
+
+    </div>
+
+    
+    
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
