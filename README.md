@@ -12,15 +12,6 @@ To create the PDF we used a package called *html2pdf* to covert our HTML file to
 
 Insert gif or link to demo
 
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0bb5f4](https://via.placeholder.com/10/0bb5f4?text=+) #0bb5f4 |
-| Example Color | ![#55555](https://via.placeholder.com/10/55555?text=+) #55555|
-| Example Color | ![#003147](https://via.placeholder.com/10/003147?text=+) #003147 |
-
-
 
 ## Deployment
 
