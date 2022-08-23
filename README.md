@@ -10,11 +10,7 @@ To create the PDF we used a package called *html2pdf* to covert our HTML file to
 
 ## Demo
 
-
-
-https://user-images.githubusercontent.com/12045891/186168123-34ec1a53-a3cb-443b-8f99-ca7cfcf52624.mp4
-
-
+https://user-images.githubusercontent.com/12045891/186168604-f4a12b30-17f8-4864-a3ca-e9cf5809ee7b.mp4
 
 
 ## Deployment
