@@ -10,8 +10,11 @@ To create the PDF we used a package called *html2pdf* to covert our HTML file to
 
 ## Demo
 
-Insert gif or link to demo
-https://www.loom.com/share/810dfa67942f48e3a4182e98c860bd13
+
+
+https://user-images.githubusercontent.com/12045891/186168123-34ec1a53-a3cb-443b-8f99-ca7cfcf52624.mp4
+
+
 
 
 ## Deployment
